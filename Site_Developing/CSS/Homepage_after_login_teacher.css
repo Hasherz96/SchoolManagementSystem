@@ -1,5 +1,5 @@
 body {
-	    background-color: #f0f0ff;
+	    background-color: #555;
 	}
 	
 	/* properties classes */
@@ -14,7 +14,7 @@ body {
 		height: auto;
 		margin: auto;
         padding: 10px;
-        background-color: #d0d0ff;
+        background-color: #D3D3D3;
         overflow: auto;
 	}
 	
@@ -30,6 +30,10 @@ body {
 		margin:5px 20px;
 		border: 2px dashed gray;
 		width: 100px;
+	}
+	.logo img {
+		width: 100%;
+		height: 100%;
 	}
 
 	.title {
@@ -71,19 +75,44 @@ body {
 	.bottom-boxes {
 		padding: 20px 20px 20px 20px;
 		border: 1px solid black;
-		float: left;
 		margin: 1px;
+		float: left;
 		
 	
 	}
 	.image-slider {
 		height: 250px;
 		margin: 5px;
+		background-color: white;
     }
+
+    @keyframes example {
+    	0%   {opacity: 0;}
+    	10%  {opacity: 1;}
+    	90%  {opacity: 1;}
+    	100% {opacity: 0;}
+	}
+
+/* The element to apply the animation to */
+	#slider {
+	    animation-name: example;
+	    animation-duration: 8s;
+	    animation-iteration-count: infinite;
+	}
     
-    #nav1{
-		float: left; 
+    #boxleft{
+		width: 743px;
+	}
+
+	#boxright{
+		 width: 155px;
+
+	}
+
+	#nav1{ 
+		overflow: auto;
 		margin-left: 5px;
+		width: 1188px;
 	}
 
 	#nav2{
@@ -94,12 +123,5 @@ body {
 	#navigatebar{
 		display: block; 
 		margin: 0px 0px 0px 0px;
-	}
 
-	#Boxleft{
-		width: 743px;
-	}
-
-	#Boxright{
-		width: 155px;
 	}

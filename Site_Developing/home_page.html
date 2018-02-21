@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
+	<script src="./JavaScript/main_slider.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="CSS/Homepage.css"/>
-	
     
 </head>
 
@@ -16,13 +16,16 @@
     	<!-- Head of the page -->
         <header id="" class="header test-border">
         	<div class="logo">
-				<img src="" alt="Logo">
+        		<a href="home_page.html" title="">
+					<img src="./Assets/Images/Logo.png" alt="Logo">
+				</a>
 			</div>
 			<div class="title test-border">
-				Title
+				<h1 style="font-size: 3vw"><center>School Management System</center></h1>
 			</div>
-			<div class="login test-border">
-				Login
+			<div class="login test-border" style="padding-top: 25px">
+    				<a href="sign_up_selection.html"  class="button button1" style="margin-left: 18px">Sign Up</a>
+					<a href="login_page.html" class="button button2" >Log In</a>
 			</div>
         </header>
 		
@@ -42,19 +45,19 @@
 		
 		<!-- Image Slider -->
 		<div class="image-slider test-border">
-			Image Slider
+			<img id="slider" src="./Assets/Images/Slider/slider_1.png">
 		</div>
 		
 		<!-- Bottom Boxes -->
 		<div style="margin: 5px;">
-		    <div class="bottom-boxes test-border" style="width: 200px;height: 200px;">
+		    <div id="bottomleft" class="bottom-boxes test-border">
 		        Bottom left
 		    </div>
-		    <div class="bottom-boxes test-border" style="width: 660px;height:200px;">
-		        Site Announcements
+		    <div id="siteannouncement" class="bottom-boxes test-border" >
+		        Announcements<br></h1>
 		    </div>
-		    <div class="bottom-boxes test-border" style="width: 315px;height:200px;">
-		        Event Calendar
+		    <div id="eventcalendar" class="bottom-boxes test-border">
+		        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;height=200&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=Asia%2FColombo" style="border-width:0" width="315" height="200" frameborder="0" scrolling="no"></iframe>
 		    </div>
 		</div>
 
